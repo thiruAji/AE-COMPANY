@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assalaamualaikum Enterprise - Premium Moving Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">AE</div>
+                    <div class="logo-text">
+                        <h2>Assalaamualaikum Enterprise</h2>
+                        <p>Don't Move Without Us</p>
+                    </div>
+                </div>
+                
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation Links -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#estimate" class="nav-link">Get Quote</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home-section active-section">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <span class="hero-badge">🏆 Trusted by 500+ Customers</span>
+                        <h1 class="hero-title">Professional Moving Services<br/>Made <span class="highlight">Simple</span></h1>
+                        <p class="hero-description">Experience stress-free relocation with our expert team. From packing to delivery, we handle everything with care and precision.</p>
+                        <div class="hero-buttons">
+                            <a href="#estimate" class="btn btn-primary">Get Free Quote</a>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <h3>500+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="stat">
+                                <h3>10+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>1000+</h3>
+                                <p>Successful Moves</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">What We Offer</span>
+                    <h2 class="section-title">Our Premium Services</h2>
+                    <p class="section-subtitle">Click on any service to learn more about what we offer</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Moving Services Card -->
+                    <div class="service-card" data-service="moving">
+                        <div class="service-icon moving-icon">🚚</div>
+                        <h3>Moving Services</h3>
+                        <p>Professional moving services for homes and offices</p>
+                        <button class="learn-more-btn">Learn More →</button>
+                    </div>
+
+                    <!-- Packing Services Card -->
+                    <div class="service-card" data-service="packing">
+                        <div class="service-icon packing-icon">📦</div>
+                        <h3>Packing Services</h3>
+                        <p>Expert packing to ensure your items stay safe</p>
+                        <button class="learn-more-btn">Learn More →</button>
+                    </div>
+
+                    <!-- Storage Solutions Card -->
+                    <div class="service-card" data-service="storage">
+                        <div class="service-icon storage-icon">🏢</div>
+                        <h3>Storage Solutions</h3>
+                        <p>Secure storage facilities for your belongings</p>
+                        <button class="learn-more-btn">Learn More →</button>
+                    </div>
+
+                    <!-- International Shipping Card -->
+                    <div class="service-card" data-service="international">
+                        <div class="service-icon international-icon">✈️</div>
+                        <h3>International Shipping</h3>
+                        <p>Worldwide shipping and relocation services</p>
+                        <button class="learn-more-btn">Learn More →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Detail Modal -->
+        <div class="modal" id="serviceModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">About Us</span>
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <p class="section-subtitle">We're committed to making your move seamless and stress-free</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>Our Mission</h3>
+                        <p>To provide exceptional moving and relocation services that exceed customer expectations while maintaining the highest standards of professionalism and care.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">👁️</div>
+                        <h3>Our Vision</h3>
+                        <p>To be the most trusted and preferred moving company, known for our reliability, efficiency, and customer-first approach.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">⭐</div>
+                        <h3>Our Values</h3>
+                        <ul class="values-list">
+                            <li>Integrity and Honesty</li>
+                            <li>Customer Satisfaction</li>
+                            <li>Professional Excellence</li>
+                            <li>Safety and Security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h3 class="features-title">What Makes Us Different</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Licensed & Insured</h4>
+                                <p>Full insurance coverage for peace of mind</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock customer service</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Trained Professionals</h4>
+                                <p>Experienced and skilled moving team</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Transparent Pricing</h4>
+                                <p>No hidden fees or surprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estimate Calculator Section -->
+        <section id="estimate" class="section estimate-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Get Your Quote</span>
+                    <h2 class="section-title">Calculate Your Moving Cost</h2>
+                    <p class="section-subtitle">Instant estimate in just a few clicks</p>
+                </div>
+
+                <div class="calculator-container">
+                    <form id="estimateForm" class="estimate-form">
+                        <!-- Step Indicator -->
+                        <div class="steps-indicator">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">Your Details</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">Property Type</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">Items</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-number">4</div>
+                                <div class="step-label">Review</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Customer Details -->
+                        <div class="form-step active" data-step="1">
+                            <h3 class="step-title">📋 Your Contact Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="customerName">Full Name *</label>
+                                    <input type="text" id="customerName" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">WhatsApp Number *</label>
+                                    <input type="tel" id="customerPhone" required placeholder="+65 9123 4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerEmail">Email Address</label>
+                                    <input type="email" id="customerEmail" placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary next-btn" data-next="2">Next Step →</button>
+                        </div>
+
+                        <!-- Step 2: Property Type -->
+                        <div class="form-step" data-step="2">
+                            <h3 class="step-title">🏠 Select Your Property Type</h3>
+                            <div class="property-grid">
+                                <label class="property-option">
+                                    <input type="radio" name="propertyType" value="hdb-2bhk" data-price="200" required>
+                                    <div class="property-content">
+                                        <div class="property-icon">🏢</div>
+                                        <h4>HDB 2 BHK</h4>
+                                        <p class="property-price">Base: $200</p>
+                                    </div>
+                                </label>
+                                <label class="property-option">
+                                    <input type="radio" name="propertyType" value="hdb-3bhk" data-price="300">
+                                    <div class="property-content">
+                                        <div class="property-icon">🏢</div>
+                                        <h4>HDB 3 BHK</h4>
+                                        <p class="property-price">Base: $300</p>
+                                    </div>
+                                </label>
+                                <label class="property-option">
+                                    <input type="radio" name="propertyType" value="condo-2bhk" data-price="250">
+                                    <div class="property-content">
+                                        <div class="property-icon">🏙️</div>
+                                        <h4>Condo 2 BHK</h4>
+                                        <p class="property-price">Base: $250</p>
+                                    </div>
+                                </label>
+                                <label class="property-option">
+                                    <input type="radio" name="propertyType" value="condo-3bhk" data-price="350">
+                                    <div class="property-content">
+                                        <div class="property-icon">🏙️</div>
+                                        <h4>Condo 3 BHK</h4>
+                                        <p class="property-price">Base: $350</p>
+                                    </div>
+                                </label>
+                                <label class="property-option">
+                                    <input type="radio" name="propertyType" value="landed" data-price="500">
+                                    <div class="property-content">
+                                        <div class="property-icon">🏡</div>
+                                        <h4>Landed House</h4>
+                                        <p class="property-price">Base: $500</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-secondary prev-btn" data-prev="1">← Back</button>
+                                <button type="button" class="btn btn-primary next-btn" data-next="3">Next Step →</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Items -->
+                        <div class="form-step" data-step="3">
+                            <h3 class="step-title">🛋️ Select Your Items</h3>
+                            <div class="items-container">
+                                <div class="item-box">
+                                    <div class="item-icon">❄️</div>
+                                    <p class="item-name">Refrigerator</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="fridge">-</button>
+                                        <input type="number" id="fridge" value="0" min="0" data-price="50" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="fridge">+</button>
+                                    </div>
+                                    <p class="item-price">$50 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🧺</div>
+                                    <p class="item-name">Washing Machine</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="washingMachine">-</button>
+                                        <input type="number" id="washingMachine" value="0" min="0" data-price="40" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="washingMachine">+</button>
+                                    </div>
+                                    <p class="item-price">$40 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">📺</div>
+                                    <p class="item-name">TV Console</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="tvConsole">-</button>
+                                        <input type="number" id="tvConsole" value="0" min="0" data-price="30" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="tvConsole">+</button>
+                                    </div>
+                                    <p class="item-price">$30 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🛏️</div>
+                                    <p class="item-name">King Bed</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="kingBed">-</button>
+                                        <input type="number" id="kingBed" value="0" min="0" data-price="80" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="kingBed">+</button>
+                                    </div>
+                                    <p class="item-price">$80 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🛏️</div>
+                                    <p class="item-name">Queen Bed</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="queenBed">-</button>
+                                        <input type="number" id="queenBed" value="0" min="0" data-price="60" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="queenBed">+</button>
+                                    </div>
+                                    <p class="item-price">$60 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🛌</div>
+                                    <p class="item-name">Mattress</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="mattress">-</button>
+                                        <input type="number" id="mattress" value="0" min="0" data-price="20" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="mattress">+</button>
+                                    </div>
+                                    <p class="item-price">$20 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🪑</div>
+                                    <p class="item-name">Dining Table</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="diningTable">-</button>
+                                        <input type="number" id="diningTable" value="0" min="0" data-price="40" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="diningTable">+</button>
+                                    </div>
+                                    <p class="item-price">$40 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🛋️</div>
+                                    <p class="item-name">Sofa Set</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="sofa">-</button>
+                                        <input type="number" id="sofa" value="0" min="0" data-price="50" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="sofa">+</button>
+                                    </div>
+                                    <p class="item-price">$50 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">🗄️</div>
+                                    <p class="item-name">Wardrobe</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="wardrobe">-</button>
+                                        <input type="number" id="wardrobe" value="0" min="0" data-price="60" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="wardrobe">+</button>
+                                    </div>
+                                    <p class="item-price">$60 each</p>
+                                </div>
+
+                                <div class="item-box">
+                                    <div class="item-icon">📦</div>
+                                    <p class="item-name">Boxes</p>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-item="boxes">-</button>
+                                        <input type="number" id="boxes" value="0" min="0" data-price="5" readonly>
+                                        <button type="button" class="qty-btn plus" data-item="boxes">+</button>
+                                    </div>
+                                    <p class="item-price">$5 each</p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-secondary prev-btn" data-prev="2">← Back</button>
+                                <button type="button" class="btn btn-primary next-btn" data-next="4">Review Quote →</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Review -->
+                        <div class="form-step" data-step="4">
+                            <h3 class="step-title">📊 Review Your Estimate</h3>
+                            <div class="review-container">
+                                <div class="estimate-summary" id="estimateSummary">
+                                    <!-- Will be filled by JavaScript -->
+                                </div>
+                                <div class="total-estimate">
+                                    <h3>Total Estimated Cost</h3>
+                                    <div class="total-amount" id="totalAmount">$0</div>
+                                    <p class="estimate-note">*Final cost may vary based on actual conditions</p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="button" class="btn btn-secondary prev-btn" data-prev="3">← Back</button>
+                                <button type="submit" class="btn btn-whatsapp">📱 Send to WhatsApp</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Get in Touch</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">We're here to help with all your moving needs</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h4>Address</h4>
+                            <p>Sholinganallur, Tamil Nadu, India</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h4>Phone</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h4>Email</h4>
+                            <p>info@assalaamualaikum.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">⏰</div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="contactName" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="contactPhone" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Assalaamualaikum Enterprise</h3>
+                    <p>Your trusted partner for professional moving and relocation services.</p>
+                    <p class="footer-tagline">Don't Move Without Us</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assalaamualaikum Enterprise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
